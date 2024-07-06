@@ -20,7 +20,7 @@ class Product{
         }
         return dbOp
             .then(result=>{
-                // console.log(result); 
+                console.log('saved'); 
             })
             .catch(err=>{
                 console.log(err)
@@ -34,7 +34,7 @@ class Product{
             .find()
             .toArray()
             .then(product=>{
-                console.log(product);
+                // console.log(product);
                 return product;
             })
             .catch(err=>{
